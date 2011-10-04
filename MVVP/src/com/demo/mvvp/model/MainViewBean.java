@@ -1,6 +1,6 @@
-package com.demo.mvp.model;
+package com.demo.mvvp.model;
 
-public class HomeBean {
+public class MainViewBean {
 	private String message;
 
 	public String getMessage() {
