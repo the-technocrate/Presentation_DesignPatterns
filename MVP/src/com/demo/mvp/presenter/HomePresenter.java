@@ -12,6 +12,7 @@ public class HomePresenter {
 	public void clickOnMe(final String actionCommand){
 		HomeBean bean = new HomeBean();
 		bean.setMessage("Click action is performed.");
-		home.clickOnMe(bean);
+		home.showMessage(bean.getMessage());//Bean is not used properly here. 
+											//However think in some other complex terms where we need to bring out some property from bean and to set view accordingly.
 	}
 }

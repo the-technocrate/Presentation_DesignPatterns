@@ -7,18 +7,18 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+import com.demo.mvp.model.HomeBean;
 import com.demo.mvp.presenter.HomePresenter;
 import com.demo.mvp.view.Home;
 
-//Class is not aware of model. Dedicated presenter handles all model related things.
 public class HomeImpl extends JFrame implements Home {
 
 	private static final long serialVersionUID = 1009985L;
-	private final HomePresenter homePresenter = new HomePresenter(this);
+	private final MainViewModel homePresenter = new MainViewModel(this);
 	
 	@Override
-	public void showMessage(String message) {
-		JOptionPane.showMessageDialog(this, message);
+	public void clickOnMe(HomeBean bean) {
+		JOptionPane.showMessageDialog(this, bean.getMessage());
 	}
 	
 	public HomeImpl() {
