@@ -1,5 +1,7 @@
 package com.demo.mvp.view;
 
-public class Home {
+import com.demo.mvp.model.HomeBean;
 
+public interface Home {
+	void clickOnMe(HomeBean bean);
 }
