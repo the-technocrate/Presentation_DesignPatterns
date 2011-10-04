@@ -9,7 +9,9 @@ public class HomePresenter {
 		this.home = home;
 	}
 	
-	public void clickOnMe(HomeBean bean){
+	public void clickOnMe(final String actionCommand){
+		HomeBean bean = new HomeBean();
+		bean.setMessage("Click action is performed.");
 		home.clickOnMe(bean);
 	}
 }

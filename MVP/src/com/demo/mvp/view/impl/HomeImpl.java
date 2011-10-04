@@ -37,9 +37,7 @@ public class HomeImpl extends JFrame implements Home {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			HomeBean bean = new HomeBean();
-			bean.setMessage("Click action is performed.");
-			homePresenter.clickOnMe(bean);
+			homePresenter.clickOnMe(e.getActionCommand());
 		}
 	}
 }

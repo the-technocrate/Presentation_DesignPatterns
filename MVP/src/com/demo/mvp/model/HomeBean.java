@@ -11,5 +11,4 @@ public class HomeBean {
 		this.message = message;
 	}
 	
-	
 }
