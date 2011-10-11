@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.smartgwt.sample.server.SupplyItem" table="supplyItem">
+        <id name="itemID">
+            <generator class="native"/>
+        </id>
+        <property name="itemName" type="string"/>
+        <property name="SKU" type="string"/>
+        <property name="description" type="string"/>
+        <property name="category" type="string"/>
+        <property name="units" type="string"/>
+        <property name="unitCost" type="double" />
+        <property name="inStock" type="boolean" />
+        <property name="nextShipment" type="string" />
+    </class>
+</hibernate-mapping>
