@@ -3,7 +3,7 @@
     <wb-module deploy-name="MVC">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/MVCPattern/build/classes"/>
+        <property name="java-output-path" value="/MVC/build/classes"/>
         <property name="context-root" value="MVC"/>
     </wb-module>
 </project-modules>
